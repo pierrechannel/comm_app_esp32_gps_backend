@@ -79,6 +79,14 @@ Le backend peut aussi consommer les positions GPS depuis MQTT:
 python manage.py consume_gps_mqtt
 ```
 
+Le service MQTT GPS est maintenant demarre automatiquement par [gps/apps.py](C:/Users/HP/Music/comm_app_esp32_gps_backend/gps/apps.py) quand vous lancez Django avec `python manage.py runserver` ou un serveur ASGI compatible.
+
+Pour le desactiver:
+
+```env
+GPS_AUTO_START_MQTT_CONSUMER=0
+```
+
 Le payload MQTT attendu est le meme JSON que l'ancien `POST /api/gps/location`, par exemple:
 
 ```json
