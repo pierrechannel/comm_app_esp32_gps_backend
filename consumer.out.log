@@ -4409,3 +4409,20 @@
 2026-04-04 19:31:46,695 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
 2026-04-04 19:31:48,616 WARNING gps.mqtt_service: Service MQTT GPS demarre depuis gps.apps.
 2026-04-04 19:31:48,644 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend tls=True
+2026-04-04 19:31:49,667 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-04 19:31:54,655 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "lat": -3.384403333, "lng": 29.383897, "alt": 856.2, "speed": 1.2038, "satellites": 10, "battery": 0, "timestamp": 17315400, "gps_fix": true, "api_key": "my_secret_gps_api_key"}
+2026-04-04 19:31:54,697 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-04 19:32:00,009 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "lat": -3.384395667, "lng": 29.383903, "alt": 855.7, "speed": 0.51856, "satellites": 10, "battery": 0, "timestamp": 17315900, "gps_fix": true, "api_key": "my_secret_gps_api_key"}
+2026-04-04 19:32:00,040 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-04 19:32:04,637 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "lat": -3.3843735, "lng": 29.38389, "alt": 855.7, "speed": 1.2038, "satellites": 9, "battery": 0, "timestamp": 17320400, "gps_fix": true, "api_key": "my_secret_gps_api_key"}
+2026-04-04 19:32:04,663 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-04 19:32:09,644 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "lat": -3.384359667, "lng": 29.38388333, "alt": 855.7, "speed": 0.81488, "satellites": 8, "battery": 0, "timestamp": 17320900, "gps_fix": true, "api_key": "my_secret_gps_api_key"}
+2026-04-04 19:32:09,681 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-04 19:32:14,844 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "lat": -3.384345833, "lng": 29.38387517, "alt": 855.6, "speed": 2.11128, "satellites": 10, "battery": 0, "timestamp": 17321400, "gps_fix": true, "api_key": "my_secret_gps_api_key"}
+2026-04-04 19:32:14,886 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-04 19:32:19,645 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "lat": -3.384282333, "lng": 29.38379033, "alt": 858.5, "speed": 9.11184, "satellites": 8, "battery": 0, "timestamp": 17321900, "gps_fix": true, "api_key": "my_secret_gps_api_key"}
+2026-04-04 19:32:19,682 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-04 19:32:24,654 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "lat": -3.3842945, "lng": 29.38379917, "alt": 857.8, "speed": 2.33352, "satellites": 9, "battery": 0, "timestamp": 17322400, "gps_fix": true, "api_key": "my_secret_gps_api_key"}
+2026-04-04 19:32:24,686 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-04 19:32:27,927 WARNING gps.mqtt_service: Service MQTT GPS demarre depuis gps.apps.
+2026-04-04 19:32:27,957 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend tls=True
