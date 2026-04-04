@@ -1,0 +1,1673 @@
+2026-04-03 10:50:27,374 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:50:32,532 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:50:37,578 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:50:42,715 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:50:47,794 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:50:52,872 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:50:57,957 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:51:03,033 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:51:08,118 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:51:13,189 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:51:59,279 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
+2026-04-03 10:54:30,898 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:54:35,968 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:54:41,015 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:54:46,062 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:55:03,176 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:55:16,260 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-03 10:57:22,663 ERROR gps.mqtt_service: MQTT deconnecte: Keep alive timeout
+2026-04-03 10:57:22,664 ERROR gps.mqtt_service: MQTT deconnecte: Keep alive timeout
+2026-04-03 10:59:52,007 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
+2026-04-04 06:26:50,034 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-04 06:26:55,159 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-04 06:27:00,269 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-04 06:27:05,363 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 148, in run_blocking_consumer
+    client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2026-04-04 07:32:33,295 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
+2026-04-04 07:52:02,681 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 258, in connect
+    self.init_connection_state()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 266, in init_connection_state
+    super().init_connection_state()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 225, in init_connection_state
+    self.check_database_version_supported()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 201, in check_database_version_supported
+    raise NotSupportedError(
+django.db.utils.NotSupportedError: MariaDB 10.5 or later is required (found 10.4.32).
+2026-04-04 07:52:12,680 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+2026-04-04 07:52:22,599 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+2026-04-04 07:52:32,630 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+2026-04-04 07:52:42,669 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+2026-04-04 07:52:52,600 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+2026-04-04 07:53:02,632 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+2026-04-04 07:53:12,566 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+2026-04-04 07:53:22,669 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+2026-04-04 07:53:33,246 ERROR gps.mqtt_service: Le service MQTT GPS a echoue. Nouvelle tentative dans 5 secondes.
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 162, in runner
+    run_blocking_consumer()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 149, in run_blocking_consumer
+    client.loop_forever()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2297, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 1686, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 2100, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3142, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 3808, in _packet_handle
+    return self._handle_publish()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4145, in _handle_publish
+    self._handle_on_message(message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\paho\mqtt\client.py", line 4501, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\mqtt_service.py", line 122, in on_message
+    response = ingest_location_payload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\gps\ingest.py", line 89, in ingest_location_payload
+    device, _ = GpsDevice.objects.get_or_create(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 631, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\HP\Music\comm_app_esp32_gps_backend\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn't exist")
+2026-04-04 08:49:49,028 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
+2026-04-04 08:52:50,991 ERROR gps.mqtt_service: MQTT deconnecte: Keep alive timeout
+2026-04-04 08:52:50,991 ERROR gps.mqtt_service: MQTT deconnecte: Keep alive timeout
+2026-04-04 08:54:52,875 ERROR gps.mqtt_service: MQTT deconnecte: Keep alive timeout
+2026-04-04 08:54:52,875 ERROR gps.mqtt_service: MQTT deconnecte: Keep alive timeout
+2026-04-04 09:13:22,184 ERROR gps.mqtt_service: MQTT deconnecte: Keep alive timeout
+2026-04-04 09:13:22,185 ERROR gps.mqtt_service: MQTT deconnecte: Keep alive timeout
+2026-04-04 09:18:55,305 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
+2026-04-04 15:01:26,410 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
+2026-04-04 15:09:57,167 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
+2026-04-04 15:39:28,576 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
+2026-04-04 16:39:41,014 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
