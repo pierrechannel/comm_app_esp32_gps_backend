@@ -1,15 +1,16 @@
 import os
-
-from channels.auth import AuthMiddlewareStack
-from channels.routing import ProtocolTypeRouter, URLRouter
 from django.core.asgi import get_asgi_application
 
-from gps.websocket_urls import websocket_urlpatterns
-
-
+# Set Django settings module FIRST
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 
+# Initialize Django BEFORE importing any other Django-dependent modules
 django_asgi_app = get_asgi_application()
+
+# Now import everything else (after Django is initialized)
+from channels.auth import AuthMiddlewareStack
+from channels.routing import ProtocolTypeRouter, URLRouter
+from gps.websocket_urls import websocket_urlpatterns
 
 application = ProtocolTypeRouter(
     {
