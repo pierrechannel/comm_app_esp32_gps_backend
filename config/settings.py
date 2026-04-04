@@ -33,7 +33,7 @@ load_env_file(BASE_DIR.parent / "comm_app_esp32_gps" / ".env")
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "dev-only-change-me")
 DEBUG = os.getenv("DJANGO_DEBUG", "1") == "1"
-ALLOWED_HOSTS = [host.strip() for host in os.getenv("DJANGO_ALLOWED_HOSTS", "*").split(",") if host.strip()]
+ALLOWED_HOSTS = ['ruvubu-hotel.com', '185.98.128.176']
 APPEND_SLASH = False
 
 INSTALLED_APPS = [
