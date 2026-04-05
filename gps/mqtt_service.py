@@ -55,12 +55,15 @@ def configure_service_logging() -> None:
     configure_service_logging._configured = True
 
 
-def should_autostart_service() -> bool:
+def should_autostart_service(force: bool = False) -> bool:
     if not getattr(settings, "GPS_AUTO_START_MQTT_CONSUMER", False):
         return False
 
     if os.environ.get("GPS_MQTT_SERVICE_STARTED") == "1":
         return False
+
+    if force:
+        return True
 
     argv = {arg.lower() for arg in sys.argv}
     is_server_process = bool({"runserver", "daphne", "uvicorn", "gunicorn"} & argv)
@@ -149,8 +152,8 @@ def run_blocking_consumer() -> None:
     client.loop_forever()
 
 
-def start_background_service() -> None:
-    if not should_autostart_service():
+def start_background_service(force: bool = False) -> None:
+    if not should_autostart_service(force=force):
         return
 
     configure_service_logging()
@@ -166,4 +169,4 @@ def start_background_service() -> None:
 
     thread = threading.Thread(target=runner, name="gps-mqtt-service", daemon=True)
     thread.start()
-    logger.warning("Service MQTT GPS demarre depuis gps.apps.")
+    logger.warning("Service MQTT GPS demarre.")
