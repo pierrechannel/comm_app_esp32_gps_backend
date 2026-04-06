@@ -72,6 +72,31 @@ def parse_limit(value: str | None) -> int:
     return max(1, min(5000, int(parsed)))
 
 
+def parse_positive_int(value: str | None, default: int) -> int:
+    if value is None or value == "":
+        return default
+    try:
+        parsed = int(value)
+    except (TypeError, ValueError):
+        return default
+    return max(1, parsed)
+
+
+def build_paginated_response(items: list[Any], page: int, page_size: int) -> dict[str, Any]:
+    total = len(items)
+    total_pages = max(1, (total + page_size - 1) // page_size)
+    safe_page = min(max(1, page), total_pages)
+    start = (safe_page - 1) * page_size
+    end = start + page_size
+    return {
+        "items": items[start:end],
+        "page": safe_page,
+        "pageSize": page_size,
+        "total": total,
+        "totalPages": total_pages,
+    }
+
+
 def resolve_device_by_key(key: str) -> GpsDevice | None:
     by_device_id = GpsDevice.objects.filter(device_id__iexact=key.strip()).first()
     if by_device_id is not None:
@@ -226,14 +251,17 @@ def ensure_device_assignments(zone: GpsZone, device_ids: list[str]) -> None:
 @csrf_exempt
 def devices_collection(request: HttpRequest) -> JsonResponse:
     if request.method == "GET":
+        page = parse_positive_int(request.GET.get("page"), 1)
+        page_size = min(200, parse_positive_int(request.GET.get("pageSize"), 20))
+        should_paginate = "page" in request.GET or "pageSize" in request.GET
         devices = list(GpsDevice.objects.all())
         last_locations: dict[str, GpsLocation] = {}
         for row in GpsLocation.objects.select_related("device").order_by("device_id", "-gps_timestamp"):
             last_locations.setdefault(str(row.device_id), row)
-        return JsonResponse(
-            [device_payload(device, last_locations.get(str(device.id))) for device in devices],
-            safe=False,
-        )
+        payload = [device_payload(device, last_locations.get(str(device.id))) for device in devices]
+        if should_paginate:
+            return JsonResponse(build_paginated_response(payload, page, page_size))
+        return JsonResponse(payload, safe=False)
 
     if request.method != "POST":
         return json_error("Methode non autorisee.", status=405)
@@ -512,6 +540,9 @@ def alerts_collection(request: HttpRequest) -> JsonResponse:
     if request.method != "GET":
         return json_error("Methode non autorisee.", status=405)
 
+    page = parse_positive_int(request.GET.get("page"), 1)
+    page_size = min(200, parse_positive_int(request.GET.get("pageSize"), 20))
+    should_paginate = "page" in request.GET or "pageSize" in request.GET
     queryset = GpsAlert.objects.select_related("device")
     alert_type = request.GET.get("type")
     device_id = request.GET.get("deviceId")
@@ -530,7 +561,10 @@ def alerts_collection(request: HttpRequest) -> JsonResponse:
     if to_date:
         queryset = queryset.filter(created_at__lte=to_date)
 
-    return JsonResponse([alert_payload(alert) for alert in queryset.order_by("-created_at")], safe=False)
+    payload = [alert_payload(alert) for alert in queryset.order_by("-created_at")]
+    if should_paginate:
+        return JsonResponse(build_paginated_response(payload, page, page_size))
+    return JsonResponse(payload, safe=False)
 
 
 @csrf_exempt

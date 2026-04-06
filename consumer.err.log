@@ -2374,3 +2374,4 @@ django.db.utils.ProgrammingError: (1146, "Table 'gps_track.gps_gpsdevice' doesn'
 2026-04-06 09:42:27,700 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
 2026-04-06 09:42:30,539 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
 2026-04-06 09:42:33,400 ERROR gps.mqtt_service: MQTT deconnecte: Unspecified error
+2026-04-06 11:16:27,628 ERROR gps.mqtt_service: MQTT deconnecte: reason=Unspecified error flags=DisconnectFlags(is_disconnect_packet_from_server=False) properties=[]
