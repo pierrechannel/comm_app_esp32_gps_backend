@@ -6080,3 +6080,4 @@
 2026-04-06 09:42:32,324 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
 2026-04-06 09:42:36,079 WARNING gps.mqtt_service: Service MQTT GPS demarre.
 2026-04-06 09:42:36,138 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend-DESKTOP-OS3UHPD tls=True
+2026-04-06 09:42:36,971 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
