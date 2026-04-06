@@ -6046,3 +6046,37 @@
 2026-04-06 09:30:05,402 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
 2026-04-06 09:30:07,946 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
 2026-04-06 09:30:10,451 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:39:53,312 WARNING gps.mqtt_service: Service MQTT GPS demarre.
+2026-04-06 09:39:53,412 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend tls=True
+2026-04-06 09:39:54,420 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:39:57,451 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:40:04,933 WARNING gps.mqtt_service: Service MQTT GPS demarre.
+2026-04-06 09:40:04,986 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend tls=True
+2026-04-06 09:40:05,773 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:40:08,650 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:40:11,532 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:40:14,387 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:41:38,334 WARNING gps.mqtt_service: Service MQTT GPS demarre.
+2026-04-06 09:41:38,390 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend tls=True
+2026-04-06 09:41:39,398 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:41:42,463 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:41:45,511 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:41:48,489 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:41:51,339 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:41:54,280 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:41:57,157 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:00,279 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:03,755 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:06,615 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:09,581 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:12,515 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:15,389 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:18,852 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:21,789 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:25,538 WARNING gps.mqtt_service: Service MQTT GPS demarre.
+2026-04-06 09:42:25,754 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend tls=True
+2026-04-06 09:42:26,638 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:29,463 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:32,324 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 09:42:36,079 WARNING gps.mqtt_service: Service MQTT GPS demarre.
+2026-04-06 09:42:36,138 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend-DESKTOP-OS3UHPD tls=True

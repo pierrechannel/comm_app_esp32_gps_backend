@@ -125,7 +125,11 @@ def run_blocking_consumer() -> None:
     if not expected_api_key:
         raise RuntimeError("GPS_API_KEY manquant dans l'environnement.")
 
-    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id=settings.MQTT_CLIENT_ID)
+    base_client_id = str(getattr(settings, "MQTT_CLIENT_ID", "comm-app-gps-backend")).strip() or "comm-app-gps-backend"
+    append_host = bool(getattr(settings, "MQTT_CLIENT_ID_APPEND_HOST", True))
+    runtime_client_id = f"{base_client_id}-{socket.gethostname()}" if append_host else base_client_id
+
+    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id=runtime_client_id)
     if settings.MQTT_USERNAME:
         client.username_pw_set(settings.MQTT_USERNAME, settings.MQTT_PASSWORD or None)
     if settings.MQTT_USE_TLS:
@@ -143,7 +147,12 @@ def run_blocking_consumer() -> None:
 
     def on_disconnect(client, userdata, disconnect_flags, reason_code, properties):
         if reason_code != 0:
-            logger.error("MQTT deconnecte: %s", reason_code)
+            logger.error(
+                "MQTT deconnecte: reason=%s flags=%s properties=%s",
+                reason_code,
+                disconnect_flags,
+                properties,
+            )
 
     def on_message(client, userdata, msg):
         try:
@@ -186,7 +195,7 @@ def run_blocking_consumer() -> None:
         "MQTT connexion en cours... broker=%s:%s client_id=%s tls=%s",
         settings.MQTT_BROKER_HOST,
         settings.MQTT_BROKER_PORT,
-        settings.MQTT_CLIENT_ID,
+        runtime_client_id,
         settings.MQTT_USE_TLS,
     )
     client.connect(settings.MQTT_BROKER_HOST, settings.MQTT_BROKER_PORT, keepalive=60)
