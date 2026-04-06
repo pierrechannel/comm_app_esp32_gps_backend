@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import socket
 import ssl
 import sys
 import threading
@@ -17,6 +18,8 @@ logger = logging.getLogger(__name__)
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUT_LOG = BASE_DIR / "consumer.out.log"
 ERR_LOG = BASE_DIR / "consumer.err.log"
+LOCK_FILE = BASE_DIR / "consumer.lock"
+LOCK_HANDLE = None
 
 try:
     import paho.mqtt.client as mqtt
@@ -76,11 +79,47 @@ def should_autostart_service(force: bool = False) -> bool:
     return True
 
 
+def acquire_consumer_lock() -> bool:
+    global LOCK_HANDLE
+
+    if LOCK_HANDLE is not None:
+        return True
+
+    LOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
+    handle = open(LOCK_FILE, "a+", encoding="utf-8")
+    handle.seek(0)
+
+    lock_message = f"pid={os.getpid()} host={socket.gethostname()}\n"
+
+    if os.name == "nt":  # pragma: no cover - production runs on Linux
+        handle.write(lock_message)
+        handle.truncate()
+        handle.flush()
+        LOCK_HANDLE = handle
+        return True
+
+    try:
+        import fcntl  # pylint: disable=import-outside-toplevel
+
+        fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        handle.close()
+        return False
+
+    handle.write(lock_message)
+    handle.truncate()
+    handle.flush()
+    LOCK_HANDLE = handle
+    return True
+
+
 def run_blocking_consumer() -> None:
     configure_service_logging()
 
     if mqtt is None:
         raise RuntimeError(f"paho-mqtt is not available: {IMPORT_ERROR}")
+    if not acquire_consumer_lock():
+        raise RuntimeError("Un autre consommateur MQTT GPS est deja actif sur ce serveur.")
 
     expected_api_key = expected_gps_api_key()
     if not expected_api_key:
@@ -97,8 +136,10 @@ def run_blocking_consumer() -> None:
             logger.error("MQTT connexion echouee: %s", reason_code)
             return
         topic = settings.MQTT_TOPIC_GPS
-        client.subscribe(topic)
-        logger.info("MQTT connecte. Abonnement a %s", topic)
+        shared_group = str(getattr(settings, "MQTT_SHARED_GROUP", "")).strip()
+        subscribe_topic = f"$share/{shared_group}/{topic}" if shared_group else topic
+        client.subscribe(subscribe_topic)
+        logger.info("MQTT connecte. Abonnement a %s", subscribe_topic)
 
     def on_disconnect(client, userdata, disconnect_flags, reason_code, properties):
         if reason_code != 0:

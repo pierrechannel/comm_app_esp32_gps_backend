@@ -118,5 +118,6 @@ MQTT_USERNAME = os.getenv("MQTT_USERNAME", "")
 MQTT_PASSWORD = os.getenv("MQTT_PASSWORD", "")
 MQTT_CLIENT_ID = os.getenv("MQTT_CLIENT_ID", "comm-app-gps-backend")
 MQTT_TOPIC_GPS = os.getenv("MQTT_TOPIC_GPS", "gps/devices/+/location")
+MQTT_SHARED_GROUP = os.getenv("MQTT_SHARED_GROUP", "")
 MQTT_USE_TLS = os.getenv("MQTT_USE_TLS", "1" if MQTT_BROKER_PORT == 8883 else "0") == "1"
 GPS_AUTO_START_MQTT_CONSUMER = os.getenv("GPS_AUTO_START_MQTT_CONSUMER", "1") == "1"
