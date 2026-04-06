@@ -18,9 +18,9 @@ from shared.session_tokens import create_session_token, parse_session_token
 from .models import AppUser
 
 
-DEFAULT_ADMIN_EMAIL = "admin@hotel.local"
+DEFAULT_ADMIN_EMAIL = "admin@gps.local"
 DEFAULT_ADMIN_PASSWORD = "admin123"
-ALLOWED_ROLES = {"ADMIN", "MANAGER", "CAISSIER", "BARMAN", "RECEPTIONNISTE"}
+ALLOWED_ROLES = {"ADMIN", "MANAGER", "OPERATEUR", "ANALYSTE", "TECHNICIEN"}
 
 
 def json_error(message: str, status: int = 400) -> JsonResponse:
@@ -266,8 +266,7 @@ def users_view(request: HttpRequest) -> JsonResponse:
         elif active_param == "false":
             queryset = queryset.filter(active=False)
         if search:
-            queryset = queryset.filter(email__icontains=search) | AppUser.objects.filter(name__icontains=search)
-            queryset = queryset.order_by("-created_at")
+            queryset = queryset.filter(Q(email__icontains=search) | Q(name__icontains=search))
 
         return JsonResponse([public_user_payload(user) for user in queryset], safe=False)
 
@@ -416,5 +415,7 @@ def user_password_view(request: HttpRequest, user_id: UUID) -> JsonResponse:
         description=f"Mot de passe mis a jour pour {user.name}.",
     )
     return JsonResponse({"success": True})
+
+
 
 

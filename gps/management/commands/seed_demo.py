@@ -13,9 +13,9 @@ from app_settings.models import EstablishmentSettings, FinancialSettings, Notifi
 from gps.models import GpsAlert, GpsDevice, GpsLocation, GpsZone, GpsZoneDevice
 
 
-ADMIN_EMAIL = "admin@hotel.local"
+ADMIN_EMAIL = "admin@gps.local"
 ADMIN_PASSWORD = "admin123"
-MANAGER_EMAIL = "manager@hotel.local"
+MANAGER_EMAIL = "manager@gps.local"
 MANAGER_PASSWORD = "manager123"
 
 
@@ -50,7 +50,7 @@ class Command(BaseCommand):
                 "email": MANAGER_EMAIL,
                 "defaults": {
                     "name": "Responsable GPS",
-                    "role": "MANAGER",
+                    "role": "OPERATEUR",
                     "active": True,
                     "password_hash": make_password(MANAGER_PASSWORD),
                 },

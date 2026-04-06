@@ -8320,3 +8320,64 @@
 2026-04-06 12:52:11,604 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
 2026-04-06 12:54:03,468 WARNING gps.mqtt_service: Service MQTT GPS demarre.
 2026-04-06 12:54:03,545 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend-DESKTOP-OS3UHPD tls=True
+2026-04-06 12:54:05,795 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 13:01:23,865 WARNING gps.mqtt_service: Service MQTT GPS demarre.
+2026-04-06 13:01:23,953 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend-DESKTOP-OS3UHPD tls=True
+2026-04-06 13:01:25,023 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 13:01:45,315 WARNING gps.mqtt_service: Service MQTT GPS demarre.
+2026-04-06 13:01:45,378 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend-DESKTOP-OS3UHPD tls=True
+2026-04-06 13:01:46,268 INFO gps.mqtt_service: MQTT connecte. Abonnement a gps/devices/+/location
+2026-04-06 13:02:14,920 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384432167, "lng": 29.38400833, "alt": 872, "speed": 0, "satellites": 8, "battery": 0, "timestamp": 11021400, "gps_fix": true}
+2026-04-06 13:02:14,958 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:02:19,942 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384390667, "lng": 29.38399517, "alt": 875.3, "speed": 1.00008, "satellites": 7, "battery": 0, "timestamp": 11021900, "gps_fix": true}
+2026-04-06 13:02:19,979 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:02:24,919 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384377667, "lng": 29.38397433, "alt": 876.6, "speed": 1.46308, "satellites": 8, "battery": 0, "timestamp": 11022400, "gps_fix": true}
+2026-04-06 13:02:24,942 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:02:30,008 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.3843795, "lng": 29.38395533, "alt": 877.4, "speed": 1.27788, "satellites": 10, "battery": 0, "timestamp": 11022900, "gps_fix": true}
+2026-04-06 13:02:30,031 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:02:35,081 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384365333, "lng": 29.38395333, "alt": 879.8, "speed": 0.1852, "satellites": 10, "battery": 0, "timestamp": 11023400, "gps_fix": true}
+2026-04-06 13:02:35,107 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:02:39,964 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.3843465, "lng": 29.38394217, "alt": 884.3, "speed": 1.37048, "satellites": 10, "battery": 0, "timestamp": 11023900, "gps_fix": true}
+2026-04-06 13:02:39,988 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:02:44,925 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.38436, "lng": 29.38393867, "alt": 883.8, "speed": 0.75932, "satellites": 9, "battery": 0, "timestamp": 11024400, "gps_fix": true}
+2026-04-06 13:02:44,951 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:02:49,964 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.3843755, "lng": 29.38392383, "alt": 882.6, "speed": 1.64828, "satellites": 10, "battery": 0, "timestamp": 11024900, "gps_fix": true}
+2026-04-06 13:02:49,983 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:02:54,922 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384384167, "lng": 29.38392733, "alt": 881.9, "speed": 0.463, "satellites": 9, "battery": 0, "timestamp": 11025400, "gps_fix": true}
+2026-04-06 13:02:54,940 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:02:59,961 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384388167, "lng": 29.38393117, "alt": 882.1, "speed": 0.53708, "satellites": 9, "battery": 0, "timestamp": 11025900, "gps_fix": true}
+2026-04-06 13:03:00,010 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:04,963 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.3843945, "lng": 29.38394883, "alt": 882, "speed": 1.2964, "satellites": 9, "battery": 0, "timestamp": 11030400, "gps_fix": true}
+2026-04-06 13:03:05,000 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:09,943 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.3843925, "lng": 29.383949, "alt": 881.8, "speed": 0.1852, "satellites": 9, "battery": 0, "timestamp": 11030900, "gps_fix": true}
+2026-04-06 13:03:09,970 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:14,931 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384388, "lng": 29.383949, "alt": 881.4, "speed": 0.68524, "satellites": 9, "battery": 0, "timestamp": 11031400, "gps_fix": true}
+2026-04-06 13:03:14,956 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:19,963 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384389833, "lng": 29.38394867, "alt": 880.9, "speed": 0.40744, "satellites": 9, "battery": 0, "timestamp": 11031900, "gps_fix": true}
+2026-04-06 13:03:20,003 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:24,926 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384403333, "lng": 29.383965, "alt": 880.2, "speed": 0.87044, "satellites": 8, "battery": 0, "timestamp": 11032400, "gps_fix": true}
+2026-04-06 13:03:24,970 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:29,928 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384415333, "lng": 29.3839565, "alt": 879.4, "speed": 1.50012, "satellites": 8, "battery": 0, "timestamp": 11032900, "gps_fix": true}
+2026-04-06 13:03:29,969 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:34,963 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384425667, "lng": 29.3839585, "alt": 878, "speed": 0.7408, "satellites": 7, "battery": 0, "timestamp": 11033400, "gps_fix": true}
+2026-04-06 13:03:35,012 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:39,960 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384448833, "lng": 29.383931, "alt": 876, "speed": 1.6668, "satellites": 9, "battery": 0, "timestamp": 11033900, "gps_fix": true}
+2026-04-06 13:03:39,990 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:44,965 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384507167, "lng": 29.38385017, "alt": 871.4, "speed": 5.093, "satellites": 9, "battery": 0, "timestamp": 11034400, "gps_fix": true}
+2026-04-06 13:03:45,173 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:49,919 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384522167, "lng": 29.38379283, "alt": 868.8, "speed": 6.25976, "satellites": 7, "battery": 0, "timestamp": 11034900, "gps_fix": true}
+2026-04-06 13:03:49,941 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:54,962 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.3845185, "lng": 29.38380417, "alt": 867.6, "speed": 2.00016, "satellites": 8, "battery": 0, "timestamp": 11035400, "gps_fix": true}
+2026-04-06 13:03:54,983 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:03:59,962 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384516333, "lng": 29.38383017, "alt": 866.5, "speed": 0.33336, "satellites": 8, "battery": 0, "timestamp": 11035900, "gps_fix": true}
+2026-04-06 13:03:59,993 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:04:04,963 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384525, "lng": 29.383834, "alt": 864.6, "speed": 1.25936, "satellites": 8, "battery": 0, "timestamp": 11040400, "gps_fix": true}
+2026-04-06 13:04:04,986 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:04:09,965 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384529667, "lng": 29.3838235, "alt": 860, "speed": 2.29648, "satellites": 8, "battery": 0, "timestamp": 11040900, "gps_fix": true}
+2026-04-06 13:04:09,990 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:04:14,969 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384536167, "lng": 29.38383333, "alt": 859.4, "speed": 1.62976, "satellites": 6, "battery": 0, "timestamp": 11041400, "gps_fix": true}
+2026-04-06 13:04:14,991 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:04:19,966 INFO gps.mqtt_service: [recu] gps/devices/ESP32_002/location {"device_id": "ESP32_002", "api_key": "my_secret_gps_api_key", "lat": -3.384566333, "lng": 29.3838625, "alt": 857.7, "speed": 1.92608, "satellites": 6, "battery": 0, "timestamp": 11041900, "gps_fix": true}
+2026-04-06 13:04:19,986 INFO gps.mqtt_service: [enregistre] gps/devices/ESP32_002/location device=ESP32_002 status=201
+2026-04-06 13:04:26,422 WARNING gps.mqtt_service: Service MQTT GPS demarre.
+2026-04-06 13:04:26,495 WARNING gps.mqtt_service: MQTT connexion en cours... broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883 client_id=comm-app-gps-backend-DESKTOP-OS3UHPD tls=True
