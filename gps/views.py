@@ -198,6 +198,9 @@ def device_payload(device: GpsDevice, last_location: GpsLocation | None = None) 
             "speed": last_location.speed,
             "battery": last_location.battery,
             "satellites": last_location.satellites,
+            "heartRate": last_location.heart_rate,
+            "pulseRaw": last_location.pulse_raw,
+            "pulseOk": last_location.pulse_ok,
             "timestamp": iso(last_location.gps_timestamp),
         }
         if last_location is not None
@@ -326,6 +329,9 @@ def device_detail(request: HttpRequest, device_key: str) -> JsonResponse:
                         "speed": row.speed,
                         "satellites": row.satellites,
                         "battery": row.battery,
+                        "heartRate": row.heart_rate,
+                        "pulseRaw": row.pulse_raw,
+                        "pulseOk": row.pulse_ok,
                         "timestamp": iso(row.gps_timestamp),
                         "createdAt": iso(row.created_at),
                     }
@@ -408,6 +414,9 @@ def device_history(request: HttpRequest, device_key: str) -> JsonResponse:
                 "speed": row.speed,
                 "satellites": row.satellites,
                 "battery": row.battery,
+                "heartRate": row.heart_rate,
+                "pulseRaw": row.pulse_raw,
+                "pulseOk": row.pulse_ok,
                 "timestamp": iso(row.gps_timestamp),
                 "createdAt": iso(row.created_at),
             }
@@ -527,6 +536,9 @@ def locations_collection(request: HttpRequest) -> JsonResponse:
                 "speed": row.speed,
                 "satellites": row.satellites,
                 "battery": row.battery,
+                "heartRate": row.heart_rate,
+                "pulseRaw": row.pulse_raw,
+                "pulseOk": row.pulse_ok,
                 "timestamp": iso(row.gps_timestamp),
                 "createdAt": iso(row.created_at),
             }

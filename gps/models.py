@@ -30,6 +30,9 @@ class GpsLocation(models.Model):
     speed = models.FloatField(blank=True, null=True)
     satellites = models.IntegerField(blank=True, null=True)
     battery = models.FloatField(blank=True, null=True)
+    heart_rate = models.FloatField(blank=True, null=True)
+    pulse_raw = models.IntegerField(blank=True, null=True)
+    pulse_ok = models.BooleanField(blank=True, null=True)
     gps_timestamp = models.DateTimeField(db_index=True)
     created_at = models.DateTimeField(auto_now_add=True, db_index=True)
 

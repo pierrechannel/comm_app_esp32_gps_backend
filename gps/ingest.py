@@ -99,6 +99,9 @@ def ingest_location_payload(body: dict[str, Any], *, expected_api_key: str | Non
         speed=float(body["speed"]) if body.get("speed") is not None else None,
         satellites=int(body["satellites"]) if body.get("satellites") is not None else None,
         battery=float(body["battery"]) if body.get("battery") is not None else None,
+        heart_rate=float(body["heart_rate"]) if body.get("heart_rate") is not None else None,
+        pulse_raw=int(body["pulse_raw"]) if body.get("pulse_raw") is not None else None,
+        pulse_ok=bool(body["pulse_ok"]) if body.get("pulse_ok") is not None else None,
         gps_timestamp=timestamp,
     )
 
